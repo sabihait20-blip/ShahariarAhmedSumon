@@ -39,6 +39,53 @@ const Politics = () => {
         ))}
       </div>
 
+      {/* Political Responsibilities Section */}
+      <div className="mb-16">
+        <h2 className="text-3xl font-bold text-[#1b5e20] mb-8 text-center">রাজনৈতিক দায়িত্ব ও সাংগঠনিক পরিচয়</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            {
+              role: 'আহবায়ক',
+              org: 'গণঅধিকার পরিষদ, বকশীগঞ্জ উপজেলা শাখা',
+              icon: <Flag className="text-white" size={20} />,
+              color: 'bg-[#2e7d32]'
+            },
+            {
+              role: 'অন্যতম সংগঠক',
+              org: 'বৈষম্য বিরোধী ছাত্র আন্দোলন, বকশীগঞ্জ উপজেলা শাখা',
+              icon: <Users className="text-white" size={20} />,
+              color: 'bg-[#d32f2f]'
+            },
+            {
+              role: 'সাবেক সহ সভাপতি',
+              org: 'গণঅধিকার পরিষদ, জামালপুর জেলা শাখা',
+              icon: <Shield className="text-white" size={20} />,
+              color: 'bg-[#1b5e20]'
+            },
+            {
+              role: 'প্রতিষ্ঠাকালীন সিনিয়র সহ সভাপতি',
+              org: 'বাংলাদেশ ছাত্র অধিকার পরিষদ, জামালপুর জেলা শাখা',
+              icon: <Target className="text-white" size={20} />,
+              color: 'bg-[#2e7d32]'
+            }
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              whileHover={{ scale: 1.02 }}
+              className="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 flex items-center gap-6"
+            >
+              <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg`}>
+                {item.icon}
+              </div>
+              <div>
+                <div className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">{item.role}</div>
+                <div className="text-xl font-bold text-[#1b5e20] leading-tight">{item.org}</div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
       <div className="glass-card rounded-[40px] p-8 md:p-12 shadow-2xl overflow-hidden relative">
         <div className="absolute top-0 left-0 w-64 h-64 bg-[#d32f2f]/5 rounded-full -ml-32 -mt-32 blur-3xl" />
         
