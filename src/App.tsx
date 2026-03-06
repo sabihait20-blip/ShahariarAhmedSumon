@@ -61,7 +61,7 @@ export default function App() {
           
           <footer className="mt-20 text-center text-sm text-[#1b5e20]/60 font-medium border-t border-[#2e7d32]/10 pt-10 pb-10">
             <p className="mt-1">
-              © ২০২৪ ইঞ্জিঃ শাহরিয়ার আহমেদ সুমন | বকশীগঞ্জ উপজেলা পরিষদ
+              © ২০২৬ ইঞ্জিঃ শাহরিয়ার আহমেদ সুমন | ডিজাইন : নুরনবী রহমান
             </p>
           </footer>
         </div>

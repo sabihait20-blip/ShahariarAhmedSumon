@@ -25,7 +25,7 @@ const Navbar = () => {
               <div className="w-8 h-8 bg-[#2e7d32] rounded-lg flex items-center justify-center text-white">
                 <Flag size={18} fill="currentColor" />
               </div>
-              <span className="hidden sm:block">সুমন ভাই</span>
+              <span className="hidden sm:block">শাহরিয়ার আহমেদ সুমন</span>
             </Link>
           </div>
 

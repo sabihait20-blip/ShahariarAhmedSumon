@@ -99,36 +99,29 @@ const Home = () => {
           গণতন্ত্র<br />ন্যায়বিচার<br />অধিকার<br />জাতীয়স্বার্থ
         </div>
         
-        <div className="w-full flex justify-between items-start">
-          <div className="text-left hidden md:block w-1/3">
-            <div className="flex flex-col items-center w-fit">
-              <span className="text-[#d32f2f] text-5xl leading-none font-serif">“</span>
-              <span className="text-[#d32f2f] font-bold text-lg -mt-4">স্মার্ট ও ডিজিটাল</span>
-              <span className="text-[#1b5e20] font-bold text-sm leading-tight text-center mt-1">
+        <div className="w-full flex flex-col md:flex-row justify-between items-center md:items-start gap-6 md:gap-0">
+          {/* Left Quote - Now visible on mobile */}
+          <div className="text-center md:text-left w-full md:w-1/3">
+            <div className="flex flex-col items-center md:items-start w-full md:w-fit">
+              <span className="text-[#d32f2f] text-4xl md:text-5xl leading-none font-serif">“</span>
+              <span className="text-[#d32f2f] font-bold text-base md:text-lg -mt-2 md:-mt-4">স্মার্ট ও ডিজিটাল</span>
+              <span className="text-[#1b5e20] font-bold text-xs md:text-sm leading-tight text-center md:text-left mt-1">
                 বকশীগঞ্জ উপজেলা বিনির্মাণে ও<br />
                 উন্নয়নের ধারা অব্যাহত রাখতে
               </span>
-              <span className="text-[#d32f2f] text-5xl leading-none -mt-2 font-serif">”</span>
+              <span className="text-[#d32f2f] text-4xl md:text-5xl leading-none -mt-1 md:-mt-2 font-serif">”</span>
             </div>
           </div>
 
-          <div className="absolute right-0 top-0 hidden md:block text-right space-y-1 font-bold text-lg text-black">
-            <div className="flex items-center justify-end gap-2">
+          {/* Right Slogans - Now visible on mobile */}
+          <div className="w-full md:w-auto md:absolute md:right-0 md:top-0 text-center md:text-right space-y-1 font-bold text-base md:text-lg text-black">
+            <div className="flex items-center justify-center md:justify-end gap-2">
               <div className="w-2 h-2 rounded-full bg-black" /> জনতার অধিকার
             </div>
-            <div className="flex items-center justify-end gap-2">
+            <div className="flex items-center justify-center md:justify-end gap-2">
               <div className="w-2 h-2 rounded-full bg-black" /> আমাদের অঙ্গীকার
             </div>
           </div>
-        </div>
-        
-        <div className="md:hidden flex justify-between w-full mt-6 px-2 text-[10px] font-bold border-t border-gray-100 pt-2">
-           <div className="text-[#1b5e20] text-left">
-              স্মার্ট ও ডিজিটাল বকশীগঞ্জ...
-           </div>
-           <div className="text-black text-right">
-              জনতার অধিকার...
-           </div>
         </div>
       </div>
 
@@ -149,13 +142,13 @@ const Home = () => {
 
         <div className="order-1 md:order-2 relative">
           <div className="absolute inset-0 bg-[#2e7d32]/5 rounded-full blur-3xl" />
-          <div className="relative w-80 h-80 md:w-[420px] md:h-[420px] mx-auto">
+          <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-[420px] md:h-[420px] mx-auto">
             <div className="absolute inset-0 rounded-full border-4 border-dashed border-green-500 animate-spin-slow" />
             <div className="absolute inset-4 md:inset-6 rounded-full border-4 border-green-600 animate-pulse-soft" />
             <div className="absolute inset-8 md:inset-12 rounded-full overflow-hidden border-8 border-white shadow-2xl">
               <img 
                 src="https://i.postimg.cc/YS26ZZwK/sumon-vai-png.png" 
-                alt="Engr. Shahriar Ahmed Suman" 
+                alt="শাহরিয়ার আহমেদ সুমন" 
                 className="w-full h-full object-cover object-top"
               />
             </div>
@@ -164,16 +157,16 @@ const Home = () => {
       </div>
 
       <div className="text-center mb-16 space-y-6">
-        <div className="inline-block green-box px-10 py-4 rounded-xl text-3xl md:text-4xl font-bold shadow-xl transform -rotate-1 hover:rotate-0 transition-transform">
-          ইঞ্জিঃ শাহরিয়ার আহমেদ সুমন ভাই কে
+        <div className="inline-block green-box px-6 md:px-10 py-4 rounded-xl text-xl sm:text-2xl md:text-4xl font-bold shadow-xl transform -rotate-1 hover:rotate-0 transition-transform">
+          শাহরিয়ার আহমেদ সুমন কে
         </div>
         <div className="relative py-4 flex justify-center items-center">
           <div className="absolute w-full h-1 bg-[#d32f2f] opacity-20" />
-          <div className="relative bg-[#d32f2f] text-white px-10 py-3 rounded-full text-2xl md:text-3xl font-bold shadow-lg flex items-center gap-3">
-            ভাইস চেয়ারম্যান <Shield size={28} />
+          <div className="relative bg-[#d32f2f] text-white px-8 md:px-10 py-3 rounded-full text-xl sm:text-2xl md:text-3xl font-bold shadow-lg flex items-center gap-3">
+            ভাইস চেয়ারম্যান <Shield size={24} />
           </div>
         </div>
-        <div className="text-4xl md:text-5xl font-bold text-[#1b5e20] tracking-tighter shadow-text">
+        <div className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1b5e20] tracking-tighter shadow-text">
           হিসাবে দেখতে চাই
         </div>
       </div>

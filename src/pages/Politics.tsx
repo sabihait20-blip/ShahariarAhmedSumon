@@ -72,14 +72,14 @@ const Politics = () => {
             <motion.div
               key={index}
               whileHover={{ scale: 1.02 }}
-              className="bg-white p-6 rounded-3xl shadow-lg border border-gray-100 flex items-center gap-6"
+              className="bg-white p-4 sm:p-6 rounded-3xl shadow-lg border border-gray-100 flex items-center gap-4 sm:gap-6"
             >
-              <div className={`w-14 h-14 ${item.color} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg`}>
+              <div className={`w-12 h-12 sm:w-14 sm:h-14 ${item.color} rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg`}>
                 {item.icon}
               </div>
               <div>
-                <div className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">{item.role}</div>
-                <div className="text-xl font-bold text-[#1b5e20] leading-tight">{item.org}</div>
+                <div className="text-[10px] sm:text-sm font-bold text-gray-400 uppercase tracking-wider mb-1">{item.role}</div>
+                <div className="text-lg sm:text-xl font-bold text-[#1b5e20] leading-tight">{item.org}</div>
               </div>
             </motion.div>
           ))}

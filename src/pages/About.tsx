@@ -54,17 +54,17 @@ const About = () => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-[#2e7d32]/5 rounded-full -mr-32 -mt-32 blur-3xl" />
         
         <div className="relative z-10 flex flex-col md:flex-row gap-8 items-center">
-          <div className="w-56 h-56 rounded-3xl border-8 border-white shadow-2xl overflow-hidden flex-shrink-0 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
+          <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-3xl border-8 border-white shadow-2xl overflow-hidden flex-shrink-0 transform -rotate-3 hover:rotate-0 transition-transform duration-500">
             <img 
               src="https://i.postimg.cc/YS26ZZwK/sumon-vai-png.png" 
-              alt="MUHAMMAD SUMON MIAH" 
+              alt="শাহরিয়ার আহমেদ সুমন" 
               className="w-full h-full object-cover object-top"
             />
           </div>
           <div className="text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold text-[#1b5e20] mb-2">মুহাম্মদ সুমন মিয়া (সুমন ভাই)</h1>
-            <p className="text-xl text-[#2e7d32] font-bold mb-4">ইঞ্জিনিয়ার ও সমাজসেবক</p>
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 text-gray-600 font-medium">
+            <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#1b5e20] mb-2">শাহরিয়ার আহমেদ সুমন</h1>
+            <p className="text-lg sm:text-xl text-[#2e7d32] font-bold mb-4">ইঞ্জিনিয়ার ও সমাজসেবক</p>
+            <div className="flex flex-wrap justify-center md:justify-start gap-2 sm:gap-4 text-gray-600 font-medium text-sm sm:text-base">
               <div className="flex items-center gap-2 bg-white/50 px-3 py-1 rounded-full border border-white/40">
                 <Phone size={16} className="text-[#2e7d32]" /> <span>০১৭৭৯-৩৪৮৫০৩</span>
               </div>
