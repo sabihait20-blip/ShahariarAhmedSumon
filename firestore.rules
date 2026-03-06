@@ -1,0 +1,28 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isValidComment(data) {
+      return data.name is string && data.name.size() > 0 && data.name.size() < 100 &&
+             data.village is string && data.village.size() > 0 && data.village.size() < 100 &&
+             data.mobile is string && data.mobile.size() > 0 &&
+             data.text is string && data.text.size() > 0 && data.text.size() < 1000 &&
+             data.createdAt is string;
+    }
+
+    match /comments/{commentId} {
+      // Allow anyone to read comments so they can see the feedback
+      allow read: if true;
+      
+      // Allow anyone to create comments (unauthenticated) with validation
+      allow create: if isValidComment(request.resource.data);
+      
+      // No updates or deletes allowed
+      allow update, delete: if false;
+    }
+  }
+}
